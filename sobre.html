@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Cremes - Nossa História</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para alinhar e destacar o conteúdo de 'Sobre' */
+        .secao-sobre {
+            padding: 50px 0;
+        }
+        .missao-valores {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .missao-valores div {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--lilas-claro);
+            border-left: 5px solid var(--roxo-principal);
+            border-radius: 5px;
+        }
+        .missao-valores ul {
+            list-style: none;
+            padding: 0;
+        }
+        .missao-valores li::before {
+            content: "✨";
+            margin-right: 10px;
+            color: var(--roxo-principal);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="logo">Sabrina Cremes 💜</h1>
+            <nav class="menu-superior">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cremes.html">Cremes</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-principal" style="background-color: var(--lilas-medio);">
+        <div class="container">
+            <h2>A História por Trás da Sabrina Cremes</h2>
+            <p>Criada de cacheada para cacheada, com paixão e propósito.</p>
+        </div>
+    </section>
+
+    <section class="secao-sobre">
+        <div class="container">
+            
+            <div style="text-align: center; margin-bottom: 50px;">
+                <img src="foto_sabrina.jpg" alt="Foto de Sabrina" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid var(--roxo-principal);">
+                <h3 style="margin-top: 15px;">A Paixão que Virou Marca</h3>
+                <p style="max-width: 800px; margin: 0 auto;">
+                    A Sabrina Cremes nasceu da frustração em encontrar produtos que realmente entendessem as necessidades dos cabelos cacheados no Brasil. O que começou como misturas caseiras na cozinha da Sabrina, evoluiu para uma linha de produtos testada e aprovada, focada em ingredientes naturais, alta performance e fórmulas livres de crueldade animal. Nosso objetivo é nutrir não apenas seus cachos, mas a sua autoconfiança.
+                </p>
+            </div>
+
+            <div class="missao-valores">
+                <div>
+                    <h4 style="color: var(--roxo-escuro);">Nossa Missão</h4>
+                    <p>Celebrar a beleza autêntica dos cabelos cacheados e crespos, oferecendo produtos de alta performance que promovem saúde, definição e empoderamento para todas as mulheres.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--roxo-escuro);">Nossos Valores</h4>
+                    <ul>
+                        <li>Fórmulas Limpas e Naturais</li>
+                        <li>Transparência com a Cliente</li>
+                        <li>Empoderamento e Comunidade Cacheada</li>
+                        <li>Sustentabilidade e Ética Animal</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Sabrina Cremes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

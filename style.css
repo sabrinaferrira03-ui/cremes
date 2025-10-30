@@ -1,0 +1,202 @@
+/* Definição das variáveis de cor com foco em Roxo e Lilás */
+:root {
+    /* Roxo principal: para cabeçalhos, botões e textos em destaque */
+    --roxo-principal: #6A0DAD; 
+    /* Roxo escuro: para o cabeçalho e rodapé (contraste) */
+    --roxo-escuro: #4B0082; 
+    /* Lilás claro: Cor de fundo suave para o corpo do site */
+    --lilas-claro: #F0E6FA; 
+    /* Lilás médio: Cor secundária para o banner e seções de destaque */
+    --lilas-medio: #C3B1E1; 
+    
+    --branco: #ffffff;
+    --texto-principal: #333333;
+}
+
+/* ------------------------------------------------------------------- */
+/* ESTILO GERAL E RESET */
+/* ------------------------------------------------------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fundo em Lilás Claro */
+    background-color: var(--lilas-claro); 
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    /* Títulos em Roxo Principal */
+    color: var(--roxo-principal); 
+}
+
+/* ------------------------------------------------------------------- */
+/* CABEÇALHO (ROXO ESCURO) */
+/* ------------------------------------------------------------------- */
+.cabecalho {
+    background-color: var(--roxo-escuro); 
+    color: var(--branco);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.menu-superior ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-superior li {
+    margin-left: 25px;
+}
+
+.menu-superior a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-superior a:hover {
+    color: var(--lilas-claro); /* Efeito hover mais suave */
+}
+
+/* ------------------------------------------------------------------- */
+/* BOTÕES (ROXO PRINCIPAL) */
+/* ------------------------------------------------------------------- */
+.botao-principal, .botao-comprar {
+    display: inline-block;
+    /* Fundo Roxo Principal */
+    background-color: var(--roxo-principal); 
+    color: var(--branco);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* Deixa o botão mais arredondado */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.botao-principal:hover, .botao-comprar:hover {
+    background-color: var(--roxo-escuro); /* Efeito hover com roxo mais profundo */
+}
+
+.botao-secundario {
+    display: inline-block;
+    /* Fundo Lilás Médio */
+    background-color: var(--lilas-medio); 
+    color: var(--roxo-principal);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-secundario:hover {
+    background-color: #AF98D0; 
+}
+
+/* ------------------------------------------------------------------- */
+/* BANNER PRINCIPAL (LILÁS MÉDIO) */
+/* ------------------------------------------------------------------- */
+.banner-principal {
+    background-color: var(--lilas-medio); 
+    padding: 80px 0;
+    text-align: center;
+    color: var(--roxo-principal);
+}
+
+.banner-principal h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--roxo-principal);
+}
+
+/* ------------------------------------------------------------------- */
+/* DESTAQUE PRODUTOS */
+/* ------------------------------------------------------------------- */
+.destaque-produtos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destaque-produtos h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.produtos-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto-item {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.1); /* Sombra mais sutil no tom roxo */
+    width: 30%; 
+    transition: transform 0.3s;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+}
+
+.produto-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------------------- */
+/* CHAMADA DICAS (ROXO ESCURO) */
+/* ------------------------------------------------------------------- */
+.chamada-dicas {
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.chamada-dicas h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: var(--branco); /* Título na cor branca para contraste com fundo escuro */
+}
+
+/* ------------------------------------------------------------------- */
+/* RODAPÉ (ROXO ESCURO) */
+/* ------------------------------------------------------------------- */
+.rodape {
+    background-color: var(--roxo-escuro);
+    color: var(--lilas-claro);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}

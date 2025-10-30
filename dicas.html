@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Cremes - Dicas e Tutoriais</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo específico para a página de dicas para melhor visualização */
+        .artigos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .artigo-card {
+            background-color: var(--branco);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .artigo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(106, 13, 173, 0.2);
+        }
+        .artigo-card h4 {
+            color: var(--roxo-escuro);
+            padding: 10px 15px 0;
+            margin: 0;
+        }
+        .artigo-card p {
+            padding: 0 15px 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="logo">Sabrina Cremes 💜</h1>
+            <nav class="menu-superior">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cremes.html">Cremes</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-principal" style="background-color: var(--lilas-medio);">
+        <div class="container">
+            <h2>Guia dos Cachos: Dicas e Tutoriais da Sabrina</h2>
+            <p>Seu manual completo para cuidar, finalizar e amar seus cabelos cacheados.</p>
+        </div>
+    </section>
+
+    <section class="conteudo-dicas">
+        <div class="container">
+            <h3 style="text-align: center; margin-bottom: 50px;">Artigos em Destaque</h3>
+
+            <div class="artigos-grid">
+
+                <article class="artigo-card">
+                    <img src="fitagem.jpg" alt="Fitagem Perfeita" style="width: 100%; height: auto;">
+                    <h4>O Segredo da Fitagem Perfeita</h4>
+                    <p>Passo a passo da técnica que garante definição máxima e longa duração.</p>
+                    <a href="#" class="botao-secundario" style="margin: 0 15px 15px; display: block; text-align: center;">Ler Agora</a>
+                </article>
+
+                <article class="artigo-card">
+                    <img src="cronograma.jpg" alt="Cronograma Capilar" style="width: 100%; height: auto;">
+                    <h4>Como Montar Seu Cronograma Capilar</h4>
+                    <p>Hidratação, Nutrição e Reconstrução: saiba quando e como fazer cada etapa.</p>
+                    <a href="#" class="botao-secundario" style="margin: 0 15px 15px; display: block; text-align: center;">Ler Agora</a>
+                </article>
+
+                <article class="artigo-card">
+                    <img src="dayafter.jpg" alt="Day After" style="width: 100%; height: auto;">
+                    <h4>5 Truques para um Day After de Sucesso</h4>
+                    <p>Revitalize seus cachos no dia seguinte sem perder a definição.</p>
+                    <a href="#" class="botao-secundario" style="margin: 0 15px 15px; display: block; text-align: center;">Ler Agora</a>
+                </article>
+            </div>
+            
+            <p style="text-align: center; margin-top: 50px;">
+                <a href="#" class="botao-principal">Ver Mais Artigos</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Sabrina Cremes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
